@@ -1,12 +1,16 @@
-#include "Vector2.h"
+#include "RigidBody.h"
 
-class RigidBody {
-    double mass;
-    Vector2 velocity;
-    Vector2 position;
-    Vector2 acceleration;
-    void applyForce(Vector2 force) {
-        acceleration = force / mass;
-    }
-    
+void RigidBody::applyForce(Vector2 force) {
+    acceleration += force/mass;
 }
+
+void RigidBody::update(double dt) {
+    acceleration = 0;
+
+    applyForce(gravity);
+
+    velocity += acceleration * dt;
+    position += velocity * dt;     
+}
+
+Vector2 RigidBody::gravity(0, -9.8);
