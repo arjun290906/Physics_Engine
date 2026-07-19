@@ -7,7 +7,7 @@ public:
     Vector2 velocity;
     Vector2 position;
     Vector2 acceleration;
+    Vector2 force;
     void applyForce(Vector2 force);
-    void initialize();
     void update(double dt);
 }
