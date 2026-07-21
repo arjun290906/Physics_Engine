@@ -1,0 +1,24 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(PhysicsEngine)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(SFML 3 REQUIRED COMPONENTS Graphics Window System)
+
+add_executable(Physics_Engine
+    src/main.cpp
+    src/Vector2.cpp
+    src/RigidBody.cpp
+    src/PhysicsWorld.cpp
+    include/RigidBody.h
+)
+
+target_include_directories(Physics_Engine PRIVATE include)
+
+target_link_libraries(Physics_Engine PRIVATE
+    SFML::Graphics
+    SFML::Window
+    SFML::System
+)

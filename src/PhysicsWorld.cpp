@@ -1,14 +1,14 @@
-#include <PhysicsWorld.h>
+#include "PhysicsWorld.h"
 
 void PhysicsWorld::applyGravity() {
     for(RigidBody& body : bodies) {
-        body.applyForce(Vector2(0, -9.8));
+        body.applyForce(Vector2(0, -9.8 * body.mass));
     }
 }
 
 void PhysicsWorld::applyDrag() {
     for(RigidBody& body : bodies) {
-        /*body.applyForce();*/
+        //body.applyForce();
     }
 }
 
@@ -18,11 +18,19 @@ void PhysicsWorld::clearForces() {
     }
 }
 
-void PhysicsWorld::update() {
+void PhysicsWorld::update(double dt) {
     applyGravity();
     applyDrag();
     for(RigidBody& body : bodies) {
-        body.update();
+        body.update(dt);
     }
     clearForces();
+}
+
+void PhysicsWorld::addBody(int m, Vector2 pos) {
+    bodies.emplace_back(m, pos);
+}
+
+std::vector<RigidBody>& PhysicsWorld::getBodies() {
+    return bodies;
 }

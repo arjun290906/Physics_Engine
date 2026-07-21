@@ -1,14 +1,14 @@
-#include <RigidBody.h>
-#include <bits/stdc++.h>
-using namespace std;  
+#include "RigidBody.h"
+#include <vector>
 
 class PhysicsWorld {
 public:
     void applyGravity();
     void applyDrag();
     void clearForces();
-    void update();
-    void addBody();
+    void update(double dt);
+    void addBody(int m, Vector2 pos);
+    std::vector<RigidBody>& getBodies();
 private:
-    vector<RigidBody> bodies;
-}
+    std::vector<RigidBody> bodies;
+};

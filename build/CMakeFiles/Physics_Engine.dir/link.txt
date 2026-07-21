@@ -1,0 +1,3 @@
+C:\msys64\ucrt64\bin\cmake.exe -E rm -f CMakeFiles\Physics_Engine.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\Physics_Engine.dir/objects.a @CMakeFiles\Physics_Engine.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Physics_Engine.dir/objects.a -Wl,--no-whole-archive -o Physics_Engine.exe -Wl,--out-implib,libPhysics_Engine.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Physics_Engine.dir\linkLibs.rsp

@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/arjun/Physics_Engine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\Physics_Engine.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Physics_Engine.dir\\src\\main.cpp.obj -c C:\\Users\\arjun\\Physics_Engine\\src\\main.cpp",
+  "file": "C:/Users/arjun/Physics_Engine/src/main.cpp",
+  "output": "CMakeFiles/Physics_Engine.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/arjun/Physics_Engine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\Physics_Engine.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Physics_Engine.dir\\src\\Vector2.cpp.obj -c C:\\Users\\arjun\\Physics_Engine\\src\\Vector2.cpp",
+  "file": "C:/Users/arjun/Physics_Engine/src/Vector2.cpp",
+  "output": "CMakeFiles/Physics_Engine.dir/src/Vector2.cpp.obj"
+},
+{
+  "directory": "C:/Users/arjun/Physics_Engine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\Physics_Engine.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Physics_Engine.dir\\src\\RigidBody.cpp.obj -c C:\\Users\\arjun\\Physics_Engine\\src\\RigidBody.cpp",
+  "file": "C:/Users/arjun/Physics_Engine/src/RigidBody.cpp",
+  "output": "CMakeFiles/Physics_Engine.dir/src/RigidBody.cpp.obj"
+},
+{
+  "directory": "C:/Users/arjun/Physics_Engine/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles\\Physics_Engine.dir\\includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Physics_Engine.dir\\src\\PhysicsWorld.cpp.obj -c C:\\Users\\arjun\\Physics_Engine\\src\\PhysicsWorld.cpp",
+  "file": "C:/Users/arjun/Physics_Engine/src/PhysicsWorld.cpp",
+  "output": "CMakeFiles/Physics_Engine.dir/src/PhysicsWorld.cpp.obj"
+}
+]
